@@ -1,0 +1,257 @@
+body{
+ font-style:normal;
+ background:  #F0F0F0 ;   /**#303030; ***/
+}
+h1{
+    font-style:Sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    color: #303030;
+    
+}
+#post-form {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#post-text{
+    margin: 15px;
+    width: 60%;
+    border-radius: 30px 30px 30px 30px;
+    padding-left: 15px;
+    padding-top: 15px;
+    color: #1a1515;
+    background: none;
+    font-size: 1em;
+}
+#postsList {
+    display: flex;
+    flex-direction: column; /* Stack the posts vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+/****.post {
+    display: flex;
+ flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 30px 30px 0px 30px;
+   
+}
+.post img{
+    border-radius: 60%;
+    background: #fff;
+} ***/
+
+.post {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Adjust the maximum width as needed */
+    text-align:left ;
+   overflow: hidden;
+}
+
+
+.post strong {
+    padding: 15px;
+    overflow: hidden;
+    
+}
+
+.post img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ff5733; /* Change the background color of the image */
+}
+
+/* Style for the post text */
+.post p:nth-child(2) {
+    font-size: 16px;
+  overflow: hidden;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Likes" span */
+.post p:nth-child(3) {
+    font-size: 14px;
+    overflow: hidden;
+    padding: 5px; /* Add padding for better readability */
+}
+
+/* Style for the "Like" button */
+.post button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style for the comment input and button */
+.post input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    border-bottom: 1px solid #303030;
+    overflow: hidden;
+}
+
+.post button[type="button"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid #303030;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.post button[type="text"]:hover{
+    border: none;
+}
+
+/* Style for the comments section */
+.post  {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Style for individual comments */
+.post  p {
+    margin: 5px 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#post-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#post-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+  /* The switch - the box around the slider */
+  .container {
+    width: 51px;
+    height: 31px;
+    position:absolute;
+    margin-bottom: 10em;
+    margin-left: 80em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  
+  .switch {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #e9e9eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+  
+  /* The slider */
+  .slider {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: calc(50% - 27px/2 - 10px);
+    top: calc(50% - 27px/2);
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+  }
+  
+  .checkbox:checked + .switch {
+    background-color: #303030;
+  }
+  
+  .checkbox:checked + .switch .slider {
+    left: calc(50% - 27px/2 + 10px);
+    top: calc(50% - 27px/2);
+  }
+  /* Styles for screens with a maximum width of 768px (e.g., tablets and smaller) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    #post-form {
+        width: 80%; /* Make the form wider on smaller screens */
+    }
+
+    #post-text {
+        width: 100%; /* Make the post text input full-width on smaller screens */
+    }
+
+    .post {
+        max-width: 100%; /* Make the posts take the full width on smaller screens */
+    }
+    .container {
+        width: 41px;
+        height: 28px;
+        position:absolute;
+        margin-bottom: 8em;
+        margin-left: 30em;
+      }
+      .switch {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #e9e9eb;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+      }
+      .slider {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: calc(48% - 25px/2 - 8px);
+        top: calc(48% - 24px/2);
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+      }
+}
+
+/* Styles for screens with a maximum width of 480px (e.g., smartphones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Further reduce font size for smartphones */
+    }
+
+    #post-form {
+        width: 100%; /* Make the form full-width on smartphones */
+    }
+}
+/* Define styles for dark mode */
+.dark-mode {
+    background-color: #303030;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background-color: #404040;
+}

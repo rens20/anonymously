@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Anonymous Post</h1>
+    <div id="post-form">
+        <textarea id="post-text" placeholder="write messange"></textarea>
+    
+        <button id="post-button">post</button>
+        <!----------------
+<div class="container">
+  <input type="checkbox" class="checkbox" id="checkbox">
+  <label class="switch" for="checkbox">
+    <span class="slider"></span>
+  </label>
+</div> --->
+       
+    </div>
+    <div id="posts-list"></div>
+    <script src="gpt.js"></script>
+    <script>
+        // Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    const checkbox = document.getElementById("checkbox");
+
+    if (checkbox.checked) {
+        body.classList.add("dark-mode");
+    } else {
+        body.classList.remove("dark-mode");
+    }
+}
+
+// Add an event listener to the checkbox
+document.getElementById("checkbox").addEventListener("change", toggleDarkMode);
+    </script>
+
+</body>
+</html>
