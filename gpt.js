@@ -34,11 +34,11 @@ function displayPosts() {
                 <p>Likes: <span id="likes-${index}">${post.likes}</span></p>
                 <button onclick="likePost(${index})">Like</button>
  
-                <div>
+              <!--- <div>
                     <input type="text" id="comment-${index}" placeholder="Leave a comment">
                     <button onclick="addComment(${index})">Comment</button>
                 </div>
- 
+ -->
                 <div id="comments-${index}"></div>
                 `;
                 postsList.appendChild(postDiv);
